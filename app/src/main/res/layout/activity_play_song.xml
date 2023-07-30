@@ -19,11 +19,12 @@
         android:text="TextView"
         android:textColor="@color/textColor"
         android:textSize="20sp"
+        android:fontFamily="@font/open_sans"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -75,11 +76,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail"
         app:layout_constraintVertical_bias="0.836" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/thumbnail"
         android:layout_width="283dp"
         android:layout_height="325dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"

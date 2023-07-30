@@ -4,6 +4,7 @@
     package="com.example.mymusic">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
 
     <application
@@ -16,8 +17,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.Dark"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         tools:targetApi="31">
+        <receiver
+        android:name=".NotificationActionReceiver"
+        android:exported="false" />
+
+        <!--        <service-->
+<!--            android:name=".NotificationActionReceiver"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".PlaySong" android:parentActivityName=".MainActivity"
             android:exported="false"/>
